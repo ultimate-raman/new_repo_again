@@ -11,6 +11,9 @@ import Dropdown from "../src/Components/Dropdown";
 import Overview from "../src/pages_folder/StartSelling/Overview";
 import Overview_do from "../src/pages_folder/StartSelling/Overview_do";
 import Overview_dont from "../src/pages_folder/StartSelling/Overview_dont";
+import ArchitectureInteriorDesign from "./ArchitectureInteriorDesign";
+import BusinessCardsStationery from "./BusinessCardsStationery";
+import Lists from "../src/pages_folder/Lists";
 
 const App = () => {
     return (
@@ -28,6 +31,9 @@ const App = () => {
                 <Route exact path="/startselling/overview" component={Overview} />
                 <Route exact path="/startselling/overview/do" component={Overview_do} />
                 <Route exact path="/startselling/overview/dont" component={Overview_dont} />
+                <Route exact path="/architecture" component={ArchitectureInteriorDesign} />
+                <Route exact path="/businesscards" component={BusinessCardsStationery} />
+                <Route exact path="/lists" component={Lists} />
                 <Route component={Error}/>
             </Switch>
             </div>
